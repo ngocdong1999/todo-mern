@@ -1,0 +1,50 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "ngocdong99",
+    "password": "Dong99"
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "ngocdong999",
+    "password": "Dong99"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMyZmZjMDRlYjFmYjE4ZjRkNmM3OTgiLCJpYXQiOjE2MjM0OTExODl9.nmLM3gcQWaMsegimYJdcegjb92CcQOuYBDC_qxezc0U
+
+{
+    "title": "Learn MongdoDB",
+    "description": "Database",
+    "url": "youtube.com",
+    "status": "DONE"
+}
+
+###
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzMWQ1ZDM0MWJhNTE3OTRhYjcxMDciLCJpYXQiOjE2MjMzOTk3NzN9.Urh-lUb0leMycOG-k3lBdA_tfBy2mit0GY3cFy4FSnA
+
+###
+PUT http://localhost:5000/api/posts/60c4de2b3c050a17c8767511
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzMWQ1ZDM0MWJhNTE3OTRhYjcxMDciLCJpYXQiOjE2MjMzOTk3NzN9.Urh-lUb0leMycOG-k3lBdA_tfBy2mit0GY3cFy4FSnA
+
+{
+    "title": "Learn NodeJS ExpressJS 1",
+    "description": "Backend framework",
+    "url": "youtube.com"
+}
+
+###
+DELETE http://localhost:5000/api/posts/60c31e507e97e620489e3dc8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGMzMWQ1ZDM0MWJhNTE3OTRhYjcxMDciLCJpYXQiOjE2MjMzOTk3NzN9.Urh-lUb0leMycOG-k3lBdA_tfBy2mit0GY3cFy4FSnA
+
+
